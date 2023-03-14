@@ -57,5 +57,6 @@ CREATE TABLE "tb_MortuaryLogs" (
 	"Log_ID" VARCHAR(10) NOT NULL PRIMARY KEY,
 	"Mortuary_ID" VARCHAR(10) NOT NULL FOREIGN KEY REFERENCES "tb_Mortuary"(Mortuary_ID),
 	"Deceased_ID" VARCHAR(10) NOT NULL FOREIGN KEY REFERENCES "tb_Deceased"(Deceased_ID),
-	"DateReceived" DATE NOT NULL
+	"DateReceived" DATE NOT NULL,
+	"DateReleased" DATE NOT NULL
 );
